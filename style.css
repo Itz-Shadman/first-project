@@ -1,0 +1,264 @@
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(#B8E7FA, #E6E6FA);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#navbar {
+    padding: 24px;
+    background-color: hsla(0, 0%, 100%, 0.6);
+    border-radius: 1px solid #C6DBFF;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar-content h2 {
+    color: #0D1321;
+}
+
+.navbar-content span {
+    color: #FFA500;
+}
+
+.btn {
+    background-image: linear-gradient(#FFA500, #FFD447);
+    border: 3px solid #FFA500;
+    padding: 17px 24px;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 1px 1px #FFA500;
+}
+
+#banner {
+    padding: 40px 60px;
+    background-color: #E6EDF9;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 87.5%;
+    margin: 100px auto;
+}
+
+.banner-image {
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.banner-content h1 {
+    color: #0D1321;
+    margin-bottom: 20px;
+}
+
+.banner-content p {
+    margin-bottom: 20px;
+}
+
+#blog-header {
+    text-align: center;
+}
+
+#blog-header h1 {
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+#blog-header p {
+    margin-bottom: 50px;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+#blog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #E6EDF9;
+    align-items: center;
+    margin: 100px auto;
+    padding: 40px 60px;
+    width: 87.5%;
+    border-radius: 16px;
+    gap: 32px;
+}
+
+#inspiration-header {
+    text-align: center;
+    margin-bottom: 100px;
+    gap: 24px;
+}
+
+#inspiration-header h1 {
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.inspiration-video {
+    text-align: center;
+    box-sizing: border-box;
+    padding: 32px;
+    border-radius: 16px;
+    background-color: #0D1321;
+}
+
+.inspiration-video iframe {
+    width: 100%;
+    height: 555px;
+    border-radius: 16px;
+}
+
+#target-header {
+    text-align: center;
+    margin: 100px auto;
+}
+
+#target-header h1 {
+    margin-bottom: 30px;
+}
+
+#target-header p {
+    margin-bottom: 20px;
+}
+
+.target {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 87.5%;
+    margin: 0 auto 150px auto;
+    gap: 32px;
+}
+
+.target-list {
+    padding: 40px;
+    background-image: linear-gradient(#E6EDF9, #9DE5FF);
+    width: 100%;
+    max-width: 340px;
+    border-radius: 16px;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+.target-list h1 {
+    margin: 24px 0;
+}
+
+.target-list a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #0D1321;
+}
+
+footer {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 32px 0;
+}
+
+.footer {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-text p {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Azeret Mono", monospace;
+}
+
+.footer-link a {
+    margin-left: 24px;
+}
+
+/* ======== Responsive Design ======== */
+
+/* Tablet */
+@media (max-width: 992px) {
+    #banner, #blog, .target {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .target-list {
+        width: 80%;
+        margin-bottom: 24px;
+    }
+
+    .navbar-content {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .btn {
+        padding: 12px 20px;
+        font-size: 18px;
+    }
+
+    .inspiration-video iframe {
+        height: 360px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    #banner,
+    #blog,
+    .target {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .target-list {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .inspiration-video iframe {
+        height: 240px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+
+    .footer-link a {
+        margin: 0 12px;
+    }
+
+    .navbar-content h2 {
+        font-size: 24px;
+    }
+
+    .btn {
+        padding: 10px 16px;
+        font-size: 16px;
+    }
+}
